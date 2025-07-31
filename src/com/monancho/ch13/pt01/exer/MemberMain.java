@@ -12,10 +12,10 @@ public class MemberMain {
 		MemberDao dao = new MemberDao();
 		List<MemberDto> memberList = dao.getMemberList();
 		
-		Iterator<MemberDto> itor = memberList.iterator(); 
+		Iterator<MemberDto> iterator = memberList.iterator(); 
 		
-		while (itor.hasNext()) {
-			MemberDto memberValue = itor.next();
+		while (iterator.hasNext()) {
+			MemberDto memberValue = iterator.next();
 			System.out.println(memberValue.getId() + " - "+ memberValue.getPw() + " - "+memberValue.getName() + " - "+ memberValue.getEmail());
 			
 		}
